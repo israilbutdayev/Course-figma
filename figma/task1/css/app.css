@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    padding: 10%;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
+}
+
+.flex-container-1 {
+    display: flex;
+    gap: 5%;
+    width: 90%;
+}
+
+.flex-container-1 > .item-1 {
+    flex-basis: 60%;
+}
+
+.content {
+    width: 3662px;
+    height: 374px;
+}
+
+div.item-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+img.photo3 {
+    z-index: -1;
+    position: relative;
+    top: -15px;
+}
+
+img.photo2 {
+    width: 232;
+    width: 203;
+}
+
+.flex-container-2 {
+    margin-top: 30px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 10%;
+}
+
+@media (max-width: 375px) {
+    body {
+        padding: 20px;
+    }
+    .content {
+        width: 308.47px;
+        height: 174.27px;
+    }
+    .flex-container-1 {
+        flex-direction: column;
+    }
+    img.photo1 {
+        width: 146.32px;
+        height: 146.78px;
+    }
+    .flex-container-2 {
+        flex-wrap: wrap;
+        width: 80%;
+    }
+    .flex-container-2 > .flex-item {
+        flex-basis: 40%;
+    }
+    img.photo2 {
+        display: none;
+    }
+}
+
+
+@media (min-width: 375px) and (max-width: 835px) {
+    img.photo1 {
+        width: 181.86px;
+        height: 182.44px;
+    }
+    img.photo2 {
+        display: none;
+    }
+
+
+}
